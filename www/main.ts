@@ -1,4 +1,3 @@
-/// <reference path="./global.d.ts"/>
 
 import angular = require('angular')
 import appModule from './app.module'

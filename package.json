@@ -4,7 +4,13 @@
   "description": "Use this to start a project using Angular Material with Typescript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --progress --colors --content-base www/ --inline",
+    "clean": "rm -f www/bundle.*",
+    "build": "webpack -p --progress --colors",
+    "predeploy": "npm run clean; npm run build",
+    "deploy": "aws s3 sync www s3://ayamgoreng",
+    "postdeploy": "scripts/postdeploy.sh"
   },
   "repository": {
     "type": "git",

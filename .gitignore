@@ -36,5 +36,7 @@ node_modules
 bundle.*
 /platforms
 /plugins
-typings
+typings/*
+!typings/global.d.ts
+!typings/browser.d.ts
 
