@@ -35,9 +35,10 @@ npm start
 
 use [typings](https://github.com/typings/typings) instead of tsd
 
-```
-typings search angular --ambient
-typings install angular --ambient --save
+```bash
+typings install dt~angular --save --global
+typings install dt~angular-material --save --global
+typings install dt~angular-ui-router --save --global
 ```
 
 ## Prepare s3 website bucket
